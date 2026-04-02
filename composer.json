@@ -14,12 +14,6 @@
         "phpstan/phpstan": "^2.0",
         "symfony/var-dumper": "^7.0"
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../framework"
-        }
-    ],
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
