@@ -1,0 +1,21 @@
+{if $pagination->hasPages()}
+<nav class="pagination">
+    {if $pagination->hasPrev()}
+        <a href="{url(query: ['page' => $pagination->prevPage()])}" class="pagination-prev">&laquo;</a>
+    {/if}
+
+    {foreach $pagination->pages() as $p}
+        {if $p === '...'}
+            <span class="pagination-ellipsis">&hellip;</span>
+        {elseif $p === $pagination->currentPage()}
+            <span class="pagination-current">{$p}</span>
+        {else}
+            <a href="{url(query: ['page' => $p])}" class="pagination-link">{$p}</a>
+        {/if}
+    {/foreach}
+
+    {if $pagination->hasNext()}
+        <a href="{url(query: ['page' => $pagination->nextPage()])}" class="pagination-next">&raquo;</a>
+    {/if}
+</nav>
+{/if}

@@ -1,0 +1,47 @@
+{
+    "name": "colibri-php/colibri",
+    "description": "Colibri project skeleton — a lightweight file-based PHP micro-framework",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.4",
+        "colibri-php/framework": "^1.0@alpha"
+    },
+    "require-dev": {
+        "filp/whoops": "^2.18",
+        "laravel/pint": "^1.0",
+        "pestphp/pest": "^3.0",
+        "phpstan/phpstan": "^2.0",
+        "symfony/var-dumper": "^7.0"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../framework"
+        }
+    ],
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "lint": "pint --test",
+        "format": "pint",
+        "analyse": "phpstan analyse --memory-limit=512M",
+        "check": [
+            "@test",
+            "@lint",
+            "@analyse"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

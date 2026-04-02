@@ -1,0 +1,8 @@
+{
+    "preset": "per",
+    "rules": {
+        "concat_space": {
+            "spacing": "one"
+        }
+    }
+}

@@ -1,0 +1,5 @@
+parameters:
+    level: 6
+    paths:
+        - routes
+    tmpDir: storage/cache/phpstan

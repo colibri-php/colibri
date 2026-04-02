@@ -1,0 +1,11 @@
+{if $pagination->hasNext()}
+<div class="pagination pagination-load-more">
+    <button
+        hx-get="{url(query: ['page' => $pagination->nextPage()])}"
+        hx-target="closest .pagination-load-more"
+        hx-swap="outerHTML"
+    >
+        Load more
+    </button>
+</div>
+{/if}

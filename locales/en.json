@@ -1,0 +1,9 @@
+{
+    "welcome": "Welcome to Colibri",
+    "homepage": "Homepage",
+    "tagline": "A lightweight file-based PHP micro-framework.",
+    "cart": {
+        "empty": "Your cart is empty",
+        "items": "{count} item(s) in your cart"
+    }
+}

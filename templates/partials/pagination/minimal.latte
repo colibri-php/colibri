@@ -1,0 +1,11 @@
+{if $pagination->hasPages()}
+<nav class="pagination pagination-minimal">
+    {if $pagination->hasPrev()}
+        <a href="{url(query: ['page' => $pagination->prevPage()])}">&laquo;</a>
+    {/if}
+    <span>{$pagination->currentPage()} / {$pagination->totalPages()}</span>
+    {if $pagination->hasNext()}
+        <a href="{url(query: ['page' => $pagination->nextPage()])}">&raquo;</a>
+    {/if}
+</nav>
+{/if}

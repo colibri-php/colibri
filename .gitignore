@@ -1,0 +1,26 @@
+/vendor/
+.env
+*.sqlite
+
+# Storage
+storage/cache/*
+storage/logs/*
+storage/uploads/*
+storage/maintenance
+!storage/cache/.gitkeep
+!storage/logs/.gitkeep
+!storage/uploads/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+/public/cache/
+/node_modules/
+/public/build/

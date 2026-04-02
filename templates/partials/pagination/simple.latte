@@ -1,0 +1,11 @@
+{if $pagination->hasPages()}
+<nav class="pagination pagination-simple">
+    {if $pagination->hasPrev()}
+        <a href="{url(query: ['page' => $pagination->prevPage()])}">&laquo; Previous</a>
+    {/if}
+
+    {if $pagination->hasNext()}
+        <a href="{url(query: ['page' => $pagination->nextPage()])}">Next &raquo;</a>
+    {/if}
+</nav>
+{/if}

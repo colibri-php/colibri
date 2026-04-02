@@ -1,0 +1,9 @@
+{
+    "welcome": "Bienvenue sur Colibri",
+    "homepage": "Accueil",
+    "tagline": "Un micro-framework PHP léger basé sur les fichiers.",
+    "cart": {
+        "empty": "Votre panier est vide",
+        "items": "{count} article(s) dans votre panier"
+    }
+}

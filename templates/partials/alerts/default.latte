@@ -1,0 +1,10 @@
+{var $messages = flash()}
+{if $messages}
+<div class="alerts">
+    {foreach $messages as $type => $message}
+        <div class="alert alert-{$type}" role="alert">
+            {$message}
+        </div>
+    {/foreach}
+</div>
+{/if}
